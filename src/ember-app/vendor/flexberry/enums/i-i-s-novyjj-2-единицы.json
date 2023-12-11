@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.Novyjj_2",
+  "className": "Единицы",
+  "enumObjects": {
+    "Шт": "Шт",
+    "Гр": "Гр",
+    "Кг": "Кг"
+  }
+}

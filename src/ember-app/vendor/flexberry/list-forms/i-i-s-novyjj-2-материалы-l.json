@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-novyjj-2-материалы-e",
+  "editForm": "i-i-s-novyjj-2-материалы-e",
+  "external": false,
+  "caption": "Материалы",
+  "name": "IISNovyjj_2МатериалыL",
+  "className": "МатериалыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-novyjj-2-материалы",
+      "modelProjection": "МатериалыL"
+    }
+  ]
+}

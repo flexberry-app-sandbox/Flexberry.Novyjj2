@@ -1,0 +1,295 @@
+﻿{
+  "name": "IISNovyjj_2РасходДенег",
+  "modelName": "i-i-s-novyjj-2-расход-денег",
+  "className": "РасходДенег",
+  "nameSpace": "IIS.Novyjj_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "банк",
+      "type": "i-i-s-novyjj-2-банк",
+      "flexberryType": "Банк",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "бИК",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иНН",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "счет",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "поставщики",
+      "relatedTo": "i-i-s-novyjj-2-поставщики",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "финансисты",
+      "relatedTo": "i-i-s-novyjj-2-финансисты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "переченьМат",
+      "relatedTo": "i-i-s-novyjj-2-перечень-мат",
+      "inverse": "расходДенег"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РасходДенегE",
+      "modelName": "i-i-s-novyjj-2-расход-денег",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "банк",
+          "caption": "Банк",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "счет",
+          "caption": "Счет",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "бИК",
+          "caption": "БИК",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 10
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Финансисты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Финансист ФИО",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Финансисты",
+          "name": "финансисты",
+          "relatedTo": "i-i-s-novyjj-2-финансисты",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Поставщики",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Поставщики",
+          "name": "поставщики",
+          "relatedTo": "i-i-s-novyjj-2-поставщики",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ПереченьМатE",
+          "caption": "Перечень материалов",
+          "name": "переченьМат",
+          "relatedTo": "i-i-s-novyjj-2-перечень-мат",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РасходДенегL",
+      "modelName": "i-i-s-novyjj-2-расход-денег",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "банк",
+          "caption": "Банк",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "счет",
+          "caption": "Счет",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "иНН",
+          "caption": "ИНН",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "бИК",
+          "caption": "БИК",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Финансисты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Финансист ФИО",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Финансист ФИО",
+          "name": "финансисты",
+          "relatedTo": "i-i-s-novyjj-2-финансисты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Поставщики",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "поставщики",
+          "relatedTo": "i-i-s-novyjj-2-поставщики",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

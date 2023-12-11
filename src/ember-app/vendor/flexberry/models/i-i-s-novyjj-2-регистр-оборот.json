@@ -1,0 +1,179 @@
+﻿{
+  "name": "IISNovyjj_2РегистрОборот",
+  "modelName": "i-i-s-novyjj-2-регистр-оборот",
+  "className": "РегистрОборот",
+  "nameSpace": "IIS.Novyjj_2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "приходДенег",
+      "relatedTo": "i-i-s-novyjj-2-приход-денег",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "расходДенег",
+      "relatedTo": "i-i-s-novyjj-2-расход-денег",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РегистрОборотE",
+      "modelName": "i-i-s-novyjj-2-регистр-оборот",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ID",
+          "lookupValueField": "iD",
+          "relationName": "ПриходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID прихода",
+              "hidden": true,
+              "index": 1
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Приход денег",
+          "name": "приходДенег",
+          "relatedTo": "i-i-s-novyjj-2-приход-денег",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ID",
+          "lookupValueField": "iD",
+          "relationName": "РасходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID расхода",
+              "hidden": true,
+              "index": 5
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 6
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Расход денег",
+          "name": "расходДенег",
+          "relatedTo": "i-i-s-novyjj-2-расход-денег",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "РегистрОборотL",
+      "modelName": "i-i-s-novyjj-2-регистр-оборот",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПриходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID прихода",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 1
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ID прихода",
+          "name": "приходДенег",
+          "relatedTo": "i-i-s-novyjj-2-приход-денег",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РасходДенег",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "iD",
+              "caption": "ID расхода",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "сумма",
+              "caption": "Сумма",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ID расхода",
+          "name": "расходДенег",
+          "relatedTo": "i-i-s-novyjj-2-расход-денег",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

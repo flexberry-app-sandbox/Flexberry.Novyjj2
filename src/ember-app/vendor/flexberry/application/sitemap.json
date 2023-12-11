@@ -1,0 +1,118 @@
+﻿{
+  "applicationCaption": "Novyjj_2",
+  "applicationTitle": "Novyjj_2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "главная",
+      "caption": "Главная",
+      "title": "Главная",
+      "children": [
+        {
+          "link": null,
+          "menuName": "документы",
+          "caption": "Документы",
+          "title": "Документы",
+          "children": [
+            {
+              "link": "i-i-s-novyjj-2-расход-денег-l",
+              "menuName": null,
+              "caption": "Расход денег",
+              "title": "Расход денег",
+              "children": null
+            },
+            {
+              "link": "i-i-s-novyjj-2-приход-денег-l",
+              "menuName": null,
+              "caption": "Приход денег",
+              "title": "Приход денег",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "номенклатура",
+          "caption": "Номенклатура",
+          "title": "Номенклатура",
+          "children": [
+            {
+              "link": "i-i-s-novyjj-2-товары-l",
+              "menuName": null,
+              "caption": "Товары",
+              "title": "Товары",
+              "children": null
+            },
+            {
+              "link": "i-i-s-novyjj-2-услуги-l",
+              "menuName": null,
+              "caption": "Услуги",
+              "title": "Услуги",
+              "children": null
+            },
+            {
+              "link": "i-i-s-novyjj-2-материалы-l",
+              "menuName": null,
+              "caption": "Материалы",
+              "title": "Материалы",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "сотрудники",
+          "caption": "Сотрудники",
+          "title": "Сотрудники",
+          "children": [
+            {
+              "link": "i-i-s-novyjj-2-финансисты-l",
+              "menuName": null,
+              "caption": "Финансисты",
+              "title": "Финансисты",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "контрагенты",
+          "caption": "Контрагенты",
+          "title": "Контрагенты",
+          "children": [
+            {
+              "link": "i-i-s-novyjj-2-клиенты-l",
+              "menuName": null,
+              "caption": "Клиенты",
+              "title": "Клиенты",
+              "children": null
+            },
+            {
+              "link": "i-i-s-novyjj-2-поставщики-l",
+              "menuName": null,
+              "caption": "Поставщики",
+              "title": "Поставщики",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "регистры",
+          "caption": "Регистры",
+          "title": "Регистры",
+          "children": [
+            {
+              "link": "i-i-s-novyjj-2-регистр-оборот-l",
+              "menuName": null,
+              "caption": "Регистр оборотов",
+              "title": "Регистр оборот",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
